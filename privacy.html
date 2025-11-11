@@ -30,11 +30,11 @@
       border-radius: 20px;
       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
       line-height: 1.6;
+      text-align: center;
     }
 
     h1 {
       color: var(--accent);
-      text-align: center;
       margin-bottom: 20px;
     }
 
@@ -54,14 +54,23 @@
       margin-bottom: 10px;
     }
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
+    a, button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      cursor: pointer;
       font-weight: bold;
+      margin: 10px 5px 0 5px;
+      text-decoration: none;
+      font-size: 1em;
+      display: inline-block;
+      transition: background 0.3s;
     }
 
-    a:hover {
-      text-decoration: underline;
+    a:hover, button:hover {
+      background: #ffaa00;
     }
 
     footer {
@@ -110,6 +119,12 @@
 
     <h2>Contact Us</h2>
     <p>If you have any questions or suggestions about our Privacy Policy, reach out to us at: <br><a href="mailto:m4doom.support@gmail.com">m4doom.support@gmail.com</a></p>
+
+    <!-- Buttons -->
+    <div>
+      <a href="index.html">Support Page</a>
+      <a href="https://m4doom.itch.io/" target="_blank">Visit Our Itch.io</a>
+    </div>
 
     <footer>&copy; 2025 M4DOOM Studio. All rights reserved.</footer>
   </div>
