@@ -19,7 +19,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
+      padding: 20px;
     }
 
     .container {
@@ -43,14 +44,23 @@
       margin: 10px 0;
     }
 
-    a {
-      color: var(--accent);
-      text-decoration: none;
+    a, button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      cursor: pointer;
       font-weight: bold;
+      margin: 10px 5px 0 5px;
+      text-decoration: none;
+      font-size: 1em;
+      display: inline-block;
+      transition: background 0.3s;
     }
 
-    a:hover {
-      text-decoration: underline;
+    a:hover, button:hover {
+      background: #ffaa00;
     }
 
     footer {
@@ -61,7 +71,6 @@
 
     @media (max-width: 600px) {
       .container {
-        margin: 20px;
         padding: 25px;
       }
     }
@@ -70,18 +79,17 @@
 <body>
   <div class="container">
     <h1>Support</h1>
-    <p>
-      Welcome to the official support page for <strong>Billie’s Wheelie</strong> and <strong>Hami Super Balls</strong> 🐹🎮
-    </p>
-    <p>
-      If you encounter any issues, feedback, or just want to say hi, contact us at:
-    </p>
-    <p>
-      <a href="mailto:m4doom.support@gmail.com">m4doom.support@gmail.com</a>
-    </p>
-    <footer>
-      &copy; 2025 M4DOOM Studio. All rights reserved.
-    </footer>
+    <p>Welcome to the official support page for <strong>Billie’s Wheelie</strong> and <strong>Hami Super Balls</strong> 🐹🎮</p>
+    <p>If you encounter any issues, feedback, or just want to say hi, contact us at:</p>
+    <p><a href="mailto:m4doom.support@gmail.com">m4doom.support@gmail.com</a></p>
+
+    <!-- Buttons -->
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="https://m4doom.itch.io/" target="_blank">Visit Our Itch.io</a>
+    </div>
+
+    <footer>&copy; 2025 M4DOOM Studio. All rights reserved.</footer>
   </div>
 </body>
 </html>
